@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a href="#text" id="scroll-button" class="show"><span class="material-symbols-outlined">
+      expand_more
+    </span></a>
+  <input type="button" value="MENU" id="mobile-menu-button" onclick="mobileMenu()">
+  <div id="mobile-menu">
+    <select name="language" id="mmenu-lang">
+      <option value="en" onclick="changeLanguage('en')">🇬🇧</option>
+      <option value="it" onclick="changeLanguage('it-IT')">🇮🇹</option>
+      <option value="de" onclick="changeLanguage('de')">🇩🇪</option>
+    </select>
+    <h2>Links</h2>
+    <ul>
+    </ul>
+  </div>
+  <div id="div1">Masiero<br>Max</div>
+  <div id="div2">Masiero<br>Max</div>
+  <div id="div3">
+    <div id="page-wrap">
+      <div id="sidebar" class="noscroll show">
+        <select name="language" id="side-lang">
+          <option value="en" onclick="changeLanguage('en')">🇬🇧</option>
+          <option value="it" onclick="changeLanguage('it-IT')">🇮🇹</option>
+          <option value="de" onclick="changeLanguage('de')">🇩🇪</option>
+        </select>
+        <input type="button" value="MENU" id="sidebar-button" onclick="exitSidebar()">
+        <h2>Links</h2>
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div id="text">
+    </div>
+  </div>
+</body>
+
+</html>
